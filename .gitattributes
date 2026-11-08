@@ -1,2 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# GitHub language statistics: the .m files in matlab/ are MATLAB code.
+# (The .m extension is shared with Objective-C, Mathematica and others, so it is declared explicitly.)
+*.m linguist-language=MATLAB
