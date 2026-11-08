@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use the SRS/SRT Fractionation Predictor, please cite the software and the publication below."
+title: "SRS/SRT Fractionation Predictor: brain-dose, OAR and template prediction for stereotactic radiosurgery and radiotherapy"
+version: "2.0.0"
+date-released: "2026-11-08"
+license: MIT
+url: "https://ali023273834.github.io/SRS-Frac-Predictor/"
+repository-code: "https://github.com/ali023273834/SRS-Frac-Predictor"
+abstract: "Browser tool that runs a locked model (MATLAB R2025b: Gaussian process regression for brain dose and plan quality, random forest for OAR dose) built on 367 saturated SRS/SRT plans. It predicts normal-brain dose for single-fraction SRS, 27 Gy in 3 and 30 Gy in 5 fractions, recommends the shortest scheme that meets the brain and OAR (TG-101) limits, and retrieves the atlas template to start planning from. Research and validation use only."
+authors:
+  - family-names: "Eid"
+    given-names: "Ali A."
+    affiliation: "Radiation Oncology Department, National Cancer Institute, Cairo University, Cairo, Egypt"
+  - family-names: "Attalla"
+    given-names: "Ehab M."
+    affiliation: "Radiation Oncology Department, National Cancer Institute, Cairo University, Cairo, Egypt"
+  - family-names: "Fathy"
+    given-names: "Mohmoud Mahmoud"
+    affiliation: "Biophysics Department, Faculty of Science, Cairo University, Cairo, Egypt"
+  - family-names: "Elgebaly"
+    given-names: "Reem H."
+    affiliation: "Biophysics Department, Faculty of Science, Cairo University, Cairo, Egypt"
+keywords: [stereotactic radiosurgery, hypofractionation, maximum tolerable volume, brain dose, OAR distance, machine learning]
+preferred-citation:
+  type: article
+  title: "Machine learning-guided fractionation and template selection for stereotactic radiosurgery and radiotherapy based on volume- and location-stratified maximum tolerable volumes"
+  authors:
+    - family-names: "Eid"
+      given-names: "Ali A."
+    - family-names: "Attalla"
+      given-names: "Ehab M."
+    - family-names: "Fathy"
+      given-names: "Mohmoud Mahmoud"
+    - family-names: "Elgebaly"
+      given-names: "Reem H."
+  journal: "[manuscript in preparation]"
+  year: 2026
