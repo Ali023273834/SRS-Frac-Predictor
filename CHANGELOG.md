@@ -1,6 +1,21 @@
 # Changelog
 
-## 2.0.0 (2026-11-08)
+## TRIAL (10 Nov 2026) — not released
+
+- For targets of about 2 cm or more (equivalent PTV diameter ≥ 2 cm), the app shows published clinical outcomes of 27 Gy in 3 fractions vs single-fraction SRS (Minniti 2016; Lehrer 2019). These are clinical series, not a prediction for the patient.
+- Template panel and copied summary show the **Monaco template name**: scheme (SRS / SRT3FR / SRT5FR), volume bin, location and shape (CR/CIR/PR/PIR), then the arc template code of the chosen location (e.g. SRS-(0.5-2cc)-CIR-OCC_L).
+  Bin edges below 10 cm³ (0–0.5, 0.5–2, 2–4) follow the author's example and are to be confirmed; above 10 cm³, 5-cm³ bins.
+- Arc set BS_C_2 confirmed (author, 10 Nov 2026): gantry 190-310 / 190-290 / 140-290 as published; the three arc lengths differ by design (120/100/150°), set by the position of the tumour relative to the brainstem.
+- Header and page title marked TRIAL.
+
+## 1.1.0 (2026-11-08): archived at Zenodo, https://doi.org/10.5281/zenodo.24051812
+
+- `matlab/`: the MATLAB code that chose, trained, locked and validated the model, with its logs, the locked export and checksums. The tests confirm that the app's model equals that export.
+- `.gitattributes`, so that GitHub recognises the `.m` files as MATLAB.
+- The DOI was added to `README.md` and `CITATION.cff`.
+- Test suite: 28,097 checks, including the comparison of the app's model with the MATLAB export.
+
+## 1.0.0 (2026-11-08): first public release
 
 **Model v3**, developed in MATLAB R2025b and locked on 7 November 2026. It replaces the scikit-learn random forests of model v2.
 
@@ -28,9 +43,10 @@
 - The classifier view was removed. The details panel now shows the MATLAB development and validation performance.
 - Below a scheme's atlas range, the app shows the brain dose at the smallest tested volume as an upper bound.
 
-**Archive:** the v2 tables and tests are kept in `05_MODEL/python/archive_v2_randomforest/` of the project.
 
-## 1.0.0 (2026-11-06)
+## Development history (not released)
+
+### Model v2 locked (2026-11-06)
 
 - **Model v2 locked** on 6 November 2026, before the independent validation cases were scored. Its tables are unchanged from 0.9.0.
 - **Independent validation on 27 clinical plans:**
@@ -43,7 +59,7 @@
 - **Status banner** shows the locked status.
 - **Exports are bit-identical** between runs (sequential averaging).
 
-## 0.9.0-candidate (2026-11-05)
+### Candidate model v2 (2026-11-05)
 
 First release of the browser app. It contains candidate model v2, which is not yet validated on new patients.
 
