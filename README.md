@@ -1,6 +1,4 @@
-# SRS/SRT Fractionation Predictor 
-
->  It adds a cited note on published clinical outcomes for targets of about 2 cm or more (see CHANGELOG). The published app is in `08_APP/SRS-Frac-Predictor`.
+# SRS/SRT Fractionation Predictor
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24051812.svg)](https://doi.org/10.5281/zenodo.24051812)
 
@@ -19,6 +17,8 @@ You enter a target's volume, location and shape, and optionally the nearest seri
 - the **shortest scheme** that meets both the brain limit and the OAR limit (TG-101);
 - the **saturated atlas plan to start from**: the nearest configuration with its measured dose and plan quality, plus the arc class solution for the target region;
 - for an OAR within 10 mm, the **OAR maximum dose** expected if the target is planned in the scheme chosen for the brain.
+- the **Monaco template name** for the case — scheme (SRS / SRT3FR / SRT5FR), PTV volume bin, location and shape (CR/CIR/PR/PIR), then the arc set code of the chosen region (e.g. SRS-(0.5-2cc)-CIR-OCC_L);
+- for targets of about 2 cm equivalent diameter or more, **published clinical outcomes** of single-fraction versus fractionated SRS (Minniti 2016; Lehrer 2019) — clinical series, not a prediction.
 
 The app runs the locked **MATLAB model v3** directly in the browser. You don't need MATLAB or Python. The MATLAB code that developed and trained the model is in [`matlab/`](matlab/).
 

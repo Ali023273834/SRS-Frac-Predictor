@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use the SRS/SRT Fractionation Predictor, please cite the software and the publication below."
 title: "SRS/SRT Fractionation Predictor: brain-dose, OAR and template prediction for stereotactic radiosurgery and radiotherapy"
-version: "1.1.0"
+version: "1.2.0"
 doi: "10.5281/zenodo.24051812"
-date-released: "2026-11-08"
+date-released: "2026-11-11"
 license: MIT
 url: "https://ali023273834.github.io/SRS-Frac-Predictor/"
 repository-code: "https://github.com/ali023273834/SRS-Frac-Predictor"

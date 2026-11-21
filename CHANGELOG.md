@@ -1,12 +1,10 @@
 # Changelog
 
-## TRIAL (10 Nov 2026) — not released
+## 1.2.0 (2026-11-11)
 
-- For targets of about 2 cm or more (equivalent PTV diameter ≥ 2 cm), the app shows published clinical outcomes of 27 Gy in 3 fractions vs single-fraction SRS (Minniti 2016; Lehrer 2019). These are clinical series, not a prediction for the patient.
-- Template panel and copied summary show the **Monaco template name**: scheme (SRS / SRT3FR / SRT5FR), volume bin, location and shape (CR/CIR/PR/PIR), then the arc template code of the chosen location (e.g. SRS-(0.5-2cc)-CIR-OCC_L).
-  Bin edges below 10 cm³ (0–0.5, 0.5–2, 2–4) follow the author's example and are to be confirmed; above 10 cm³, 5-cm³ bins.
-- Arc set BS_C_2 confirmed (author, 10 Nov 2026): gantry 190-310 / 190-290 / 140-290 as published; the three arc lengths differ by design (120/100/150°), set by the position of the tumour relative to the brainstem.
-- Header and page title marked TRIAL.
+- The template panel and the copied summary show the **Monaco template name** for the case: scheme (SRS / SRT3FR / SRT5FR; the prescription is stored inside the template, not in its name), PTV volume bin (0–0.5, 0.5–2, 2–4, 4–10, then 5-cm³ bins to 40), location and shape (CR/CIR/PR/PIR), then the arc set code of the chosen region — e.g. SRS-(0.5-2cc)-CIR-OCC_L. A placeholder is shown until a region is chosen; no name when the recommendation is beyond five fractions.
+- For targets with an equivalent PTV diameter of about 2 cm or more, an information note gives published clinical outcomes of single-fraction versus fractionated SRS (Minniti 2016: radionecrosis 20% vs 8%, 1-year local control 77% vs 91%; Lehrer 2019: 23.1% vs 7.3%, local control not significantly different). These are clinical series, not a prediction for the patient.
+- No change to the model, the recommendation or the arc tables: the locked MATLAB export and all 28,097 checks are unchanged.
 
 ## 1.1.0 (2026-11-08): archived at Zenodo, https://doi.org/10.5281/zenodo.24051812
 
