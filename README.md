@@ -1,6 +1,6 @@
-# SRS/SRT Fractionation Predictor — TRIAL COPY
+# SRS/SRT Fractionation Predictor 
 
-> **Trial copy (10 Nov 2026). Do not upload.** It adds a cited note on published clinical outcomes for targets of about 2 cm or more (see CHANGELOG). The published app is in `08_APP/SRS-Frac-Predictor`.
+>  It adds a cited note on published clinical outcomes for targets of about 2 cm or more (see CHANGELOG). The published app is in `08_APP/SRS-Frac-Predictor`.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24051812.svg)](https://doi.org/10.5281/zenodo.24051812)
 
